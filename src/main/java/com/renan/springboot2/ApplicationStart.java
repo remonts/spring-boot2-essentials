@@ -1,11 +1,12 @@
-package com.renan.springboot2.start;
+package com.renan.springboot2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
-@EnableAutoConfiguration
-@ComponentScan(basePackages = "com.renan.springboot2")
+@SpringBootApplication
 public class ApplicationStart {
     public static void main(String[] args) {
         SpringApplication.run(ApplicationStart.class, args);
