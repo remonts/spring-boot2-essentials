@@ -19,10 +19,8 @@ import java.util.List;
 @RequiredArgsConstructor
 public class AnimeController {
 
-    @Autowired
-    private DateUtil dateUtil;
-    @Autowired
-    private AnimeService animeService;
+    private final DateUtil dateUtil;
+    private final AnimeService animeService;
 
     @GetMapping
     public List<Anime> list() {
